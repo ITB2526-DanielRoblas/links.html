@@ -3,152 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniel Roblas | Enlaces profesionales</title>
+  <title>Daniel Roblas Serra | Enlaces Profesionales</title>
   <style>
-    :root {
-      --bg1: #0f172a;
-      --bg2: #1e293b;
-      --card: rgba(255,255,255,0.08);
-      --text: #e5eefb;
-      --muted: #cbd5e1;
-      --accent: #38bdf8;
-      --accent2: #22c55e;
-    }
-    * { box-sizing: border-box; }
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Inter, Arial, sans-serif;
-      background: linear-gradient(135deg, var(--bg1), var(--bg2));
-      color: var(--text);
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 24px;
     }
+
     .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 32px;
+      max-width: 680px;
       width: 100%;
-      max-width: 720px;
-      background: var(--card);
-      backdrop-filter: blur(14px);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 24px;
-      padding: 36px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      text-align: center;
     }
-    .badge {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(56,189,248,0.14);
-      color: #bfe9ff;
-      font-size: 14px;
-      margin-bottom: 16px;
-    }
+
     h1 {
-      margin: 0 0 10px;
-      font-size: clamp(2rem, 5vw, 3rem);
-      line-height: 1.05;
+      font-size: 2rem;
+      margin-bottom: 8px;
     }
-    .subtitle {
-      margin: 0 0 22px;
-      color: var(--muted);
+
+    p.subtitle {
+      color: #cbd5e1;
+      margin-bottom: 28px;
       font-size: 1.05rem;
-      line-height: 1.6;
     }
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 0 0 28px;
-      padding: 0;
-      list-style: none;
-    }
-    .pill-row li {
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.08);
-      color: #dbeafe;
-      font-size: 0.95rem;
-    }
+
     .links {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 14px;
+      margin-top: 20px;
     }
+
     .links a {
       display: block;
       text-decoration: none;
-      color: white;
-      padding: 16px 18px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      transition: transform .18s ease, background .18s ease, border-color .18s ease;
-      font-weight: 700;
+      background: white;
+      color: #0f172a;
+      padding: 14px 18px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .links a span {
-      display: block;
-      font-weight: 400;
-      color: var(--muted);
-      margin-top: 6px;
-      font-size: 0.95rem;
-    }
+
     .links a:hover {
       transform: translateY(-2px);
-      background: rgba(56,189,248,0.12);
-      border-color: rgba(56,189,248,0.35);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
+
     .footer {
-      margin-top: 28px;
-      color: var(--muted);
-      font-size: 0.92rem;
-      line-height: 1.6;
-    }
-    .cta {
-      color: #b7f3c8;
-      font-weight: 700;
+      margin-top: 24px;
+      font-size: 0.95rem;
+      color: #cbd5e1;
     }
   </style>
 </head>
 <body>
-  <main class="card">
-    <div class="badge">ASIR · Sistemas · Redes · Ciberseguridad</div>
+  <div class="card">
     <h1>Daniel Roblas Serra</h1>
     <p class="subtitle">
-      Estudiante de ASIR con enfoque en sistemas, redes y cloud. Aquí tienes mis principales enlaces profesionales para conocer mis proyectos, experiencia y perfil técnico.
+      Estudiante en prácticas · Desarrollo web · Perfil profesional
     </p>
 
-    <ul class="pill-row">
-      <li>Ubuntu</li>
-      <li>Windows Server</li>
-      <li>Active Directory</li>
-      <li>AWS</li>
-      <li>Bash</li>
-      <li>SSH</li>
-    </ul>
-
-    <section class="links">
-      <a href="https://www.linkedin.com/in/daniel-roblas-serra-6578373a0/" target="_blank" rel="noopener noreferrer">
+    <div class="links">
+      <a href="https://www.linkedin.com/in/daniel-roblas-serra-6578373a0/" target="_blank">
         LinkedIn
-        <span>Perfil profesional y trayectoria</span>
       </a>
-      <a href="https://github.com/ITB2526-DanielRoblas/daniel-roblas-portafolio" target="_blank" rel="noopener noreferrer">
-        GitHub
-        <span>Repositorio de mi portafolio y proyectos</span>
-      </a>
-      <a href="https://itb2526-danielroblas.github.io/daniel-roblas-portafolio/index.html" target="_blank" rel="noopener noreferrer">
-        Portafolio
-        <span>Web con mis proyectos técnicos</span>
-      </a>
-      <a href="./CV_Daniel_Roblas_Castellano_Portafolio_LinkedIn_GitHub_v6.pdf" target="_blank" rel="noopener noreferrer">
-        CV
-        <span>Currículum en PDF descargable</span>
-      </a>
-    </section>
 
-    <p class="footer">
-      <span class="cta">Disponible para prácticas</span> en soporte IT, sistemas o redes. Puedes escanear el QR y acceder a todo desde una sola página.
-    </p>
-  </main>
+      <a href="https://github.com/ITB2526-DanielRoblas/daniel-roblas-portafolio" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://itb2526-danielroblas.github.io/daniel-roblas-portafolio/index.html" target="_blank">
+        Portafolio
+      </a>
+
+      <a href="./CV_Daniel_Roblas_Castellano_Portafolio_LinkedIn_GitHub_v6.pdf" target="_blank">
+        Ver CV
+      </a>
+    </div>
+
+    <div class="footer">
+      Gracias por visitar mi perfil profesional.
+    </div>
+  </div>
 </body>
 </html>
